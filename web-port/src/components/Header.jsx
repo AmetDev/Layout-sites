@@ -1,7 +1,7 @@
 export function Header() {
     return (
        <header className="flex justify-center">
-        <div className="ml-[132px] mr-[132px] h-20  flex items-center justify-between">
+        <div className=" h-20  flex items-center justify-between  bg-slate-500">
             <ul className="flex">
                 <div className="flex mr-[203px]">
                     <a className="flex" href="#">
