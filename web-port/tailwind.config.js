@@ -1,3 +1,5 @@
+const { default: plugin } = require('tailwindcss')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,9 +9,12 @@ module.exports = {
     extend: {
       colors: {
         midblack: '#0F1624',
+        midindigo: '#945DD6',
+        midcyan: '#6978D1',
+        midblue: '#13ADC7',
       },
     },
   },
-  plugins: [],
+  plugins: []
 }
 

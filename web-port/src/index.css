@@ -6,3 +6,8 @@ body {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
     font-family: 'Poppins', sans-serif;
 }
+
+/* .btn {
+    @apply bg-gradient-to-r from-midindigo from-10% via-midcyan via-30% to-midblue to-90% text-white  rounded-full font-semibold
+
+} */

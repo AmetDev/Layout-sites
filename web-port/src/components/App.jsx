@@ -5,7 +5,7 @@ import { Begin } from "./Begin";
 
 function App() {
   return (
-    <div className="flex justify-center flex-col">
+    <div className="max-w-screen-xl mx-auto">
       <Header/>
       <Begin />
     </div>
