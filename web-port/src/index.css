@@ -11,3 +11,23 @@ body {
     @apply bg-gradient-to-r from-midindigo from-10% via-midcyan via-30% to-midblue to-90% text-white  rounded-full font-semibold
 
 } */
+
+
+.un {
+    display: inline-block;
+  }
+  
+  .un::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: 300ms;
+  }
+  
+  .un:hover::after {
+    width: 100%;
+  }
+
+  
