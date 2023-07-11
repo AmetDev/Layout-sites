@@ -3,26 +3,6 @@ export function Technologies() {
 {id: 4, name:'UI design in Figma', level: 'Beginner'}, {id: 5, name: 'React', level: 'Beginner'}, {id: 6, name: 'React Native', level: 'Beginner'}]
     return (
         arr.map((element) => {
-           /*  if(element.level === 'Advanced') {
-              return (
-                <div className="text-white">
-                  <ul className="flex">
-                    <li>{element.name}</li>
-                    <li>{element.level}</li>
-                  </ul>
-                </div>
-              );
-            } else {
-              return (
-                <div className="text-white">
-                  <ul>
-                    <li>{element.name}</li>
-                    <li>{element.level}</li>
-                  </ul>
-                </div>
-              );
-            }
-          }) */
         return (
             <div>
                 <ul className="flex flex-col">
