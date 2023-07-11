@@ -5,6 +5,8 @@ import { Projects } from "./Projects";
 import { Technologies } from "./Techonologies";
 import { List } from "./List";
 import { AboutMe } from "./AboutMe";
+import { Footer } from "./Footer";
+
 function App() {
   return (
     <div className="max-w-screen-xl mx-auto">
@@ -14,6 +16,7 @@ function App() {
       <Technologies/>
       <List/>
       <AboutMe/>
+      <Footer/>
     </div>
     
 
