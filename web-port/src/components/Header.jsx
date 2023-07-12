@@ -1,7 +1,7 @@
 export function Header() {
     return (
-       <header className="">
-        <div className=" h-20  flex items-center justify-between ">
+       <header className="mb-[314px]">
+        <div className=" h-20  flex items-center justify-center ">
             <ul className="flex items-center">
                 <div className="flex mr-[203px]">
                     <a className="flex items-center" href="#">
@@ -19,14 +19,14 @@ export function Header() {
                     </linearGradient>
                     </defs>
                     </svg>
-                    <p href="#" className="text-white text-[18px] un font-medium">AmexDev</p>
+                    <p href="#" className="text-white text-[30px] un font-medium">AmexDev</p>
                 </a>
                 </div>
-                <div className="flex text-white text-[18px] font-medium">
+                <div className="flex text-white text-[30px] font-medium items-center">
                 <li className="mr-[104px] un"><a href="#">Projects</a></li>
-                <li className="mr-[104px] un"><a href="#">Technologies</a></li>
+                <li className="mr-[101px] un"><a href="#">Technologies</a></li>
                 
-                <li className="mr-[300px] un"><a href="#">About me</a></li>
+                <li className="mr-[336px] un whitespace-nowrap"><a href="#">About me</a></li>
 
                 </div>
                 <div className="flex text-white">
