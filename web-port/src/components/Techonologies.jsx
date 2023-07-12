@@ -2,7 +2,11 @@ export function Technologies() {
     const arr = [{id: 1, name: 'Html', level: 'Advanced'}, {id: 2, name: 'CSS, Sass & TailwindCSS', level: 'Advanced'}, {id: 3, name: 'JavaScript', level: 'Advanced'}, 
 {id: 4, name:'UI design in Figma', level: 'Beginner'}, {id: 5, name: 'React', level: 'Beginner'}, {id: 6, name: 'React Native', level: 'Beginner'}]
     return (
-        arr.map((element) => {
+        <div className="mt-[345px]">
+            <div className="mb-[95px]">
+                <p className="text-white font-semibold text-[48px]">Technologies</p>
+            </div>
+             {arr.map((element) => {
         return (
             <div>
                 <ul className="flex flex-col">
@@ -38,5 +42,7 @@ export function Technologies() {
             </div>
         )
     }     
-  )
+  )}
+        </div>
+       
 )}
