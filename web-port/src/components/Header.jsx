@@ -22,7 +22,8 @@ export function Header() {
                     <p href="#" className="text-white text-[30px] un font-medium">AmexDev</p>
                     </a>
                 </div>
-                <div className="flex text-white text-[30px] font-medium items-cente visible max-2xl:invisible">
+                <div className="flex text-white text-[30px] font-medium items-center visible max-2xl:invisible">
+                    //используй не visilbe, а что-то другое, т.к. invsible просто скрывает от глаз но не убирает его с дисплея, поэтому экран не сжимается.
                 <li className="mr-[104px] un"><a href="#">Projects</a></li>
                 <li className="mr-[101px] un"><a href="#">Technologies</a></li>
                 
