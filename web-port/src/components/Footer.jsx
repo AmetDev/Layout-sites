@@ -1,9 +1,9 @@
 export function Footer() {
     return (
-    <footer className="flex justify-center font-semibold text-[42px] mb-[200px]">
+    <footer className="flex justify-center font-semibold xl:text-[42px] sm:text-[28px] mb-[200px]">
         <div className="text-white mr-[140px]">
             <p>Call me:</p>
-            <p>123-456-789</p>
+            <tel>123-456-789</tel>
         </div>
         <div  className="text-white mr-[67px]">
             <p>email</p>

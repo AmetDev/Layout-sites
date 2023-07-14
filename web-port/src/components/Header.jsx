@@ -3,7 +3,7 @@ export function Header() {
        <header className="mb-[314px]">
         <div className=" h-20  flex items-center justify-center ">
             <ul className="flex items-center">
-                <div className="flex mr-[203px]">
+                <div className="flex 2xl:mr-[203px] sm:mr-[50px]">
                     <a className="flex items-center" href="#">
                     <svg width="49" height="38" viewBox="0 0 49 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.9002 29.8056L24.5002 0L44.1002 29.8056H4.9002ZM18.0075 24.0611L24.4091 13.1841L30.8108 24.0611H18.0075Z" fill="url(#paint0_linear_313_6)"/>
@@ -22,7 +22,7 @@ export function Header() {
                     <p href="#" className="text-white text-[30px] un font-medium">AmexDev</p>
                 </a>
                 </div>
-                <div className="flex text-white text-[30px] font-medium items-center">
+                <div className="flex text-white text-[30px] font-medium items-center sm:invisible 2xl:visible">
                 <li className="mr-[104px] un"><a href="#">Projects</a></li>
                 <li className="mr-[101px] un"><a href="#">Technologies</a></li>
                 
