@@ -1,0 +1,23 @@
+../
+test1/
+| node_modules/
+| public/
+| src/
+| | assets/
+| | App.css
+| | App.jsx
+| | index.css
+| | main.jsx
+| .eslintignore
+| .eslintrc.cjs
+| .eslintrc.json
+| .gitignore
+| .prettierignore
+| .prettierrc.json
+| .stylelintignore
+| .stylelintrc.json
+| index.html
+| package-lock.json
+| package.json
+| vite.config.js
+| yarn.lock

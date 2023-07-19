@@ -1,0 +1,28 @@
+.Header {
+  background-color: #888;
+  display: flex;
+  width: 800px;
+}
+
+li {
+  /*margin-right: 30px;*/
+  list-style-type: none;
+}
+
+.Wr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: -40px;
+  align-items: center;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: center;
+}
+.Navmr {
+  margin: 0;
+}

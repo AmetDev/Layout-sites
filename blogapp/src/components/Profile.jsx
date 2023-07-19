@@ -1,6 +1,6 @@
 export function Profile() {
     return(
-        <div className="">
+        <div className="text-white">
             AmexDev
         </div>
     )
