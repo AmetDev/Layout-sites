@@ -27,8 +27,15 @@ function Articles() {
   };
   console.log(curDate);
   return (
-    <div className="flex justify-start mt-10">
+    <div className="flex justify-start mt-10 flex flex-col">
       <p className="text-teal-300 text-4xl font-bold">How to customize NVIM</p>
+      <div>
+        <p className="text-white">
+          {curDate.curDateDay}
+          {curDate.curMonth}
+          {curDate.curYear}
+        </p>
+      </div>
     </div>
   );
 }
