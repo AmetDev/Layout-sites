@@ -1,4 +1,7 @@
+import { React, useEffect, useState } from "react";
+import { MenuDetail } from "./MenuDetail.jsx";
 import { Link } from "react-router-dom";
+import axios from "axios";
 function Articles() {
   const months = [
     "January",
@@ -26,41 +29,45 @@ function Articles() {
     curYear: clock.getFullYear(),
     curDateDay: clock.getDate(),
   };
+  const [arr, setArr] = useState([]);
   console.log(curDate);
+  useEffect(() => {
+    async function getPosts() {
+      const data2 = await axios.get("http://localhost:4200/posts");
+      setArr(data2.data);
+      <MenuDetail info={data2.data} />;
+    }
+    getPosts();
+  }, []);
+  console.log(arr);
   return (
     <div>
-      <div className="flex justify-start mt-10 flex flex-col">
-        <Link to={`/menu/1`} className="text-teal-300 text-2xl font-black">
-          How to customize NVIM
-        </Link>
-        <div>
-          <p className="text-white font-semibold">
-            {curDate.curDateDay}
-            {curDate.curMonth}
-            {curDate.curYear}
-            &nbsp;10 min read
-          </p>
-          <p className="text-white text-xl font-semibold">
-            It's very hard bacause they need....
-          </p>
-        </div>
-      </div>
-      <div className="flex justify-start mt-10 flex flex-col">
-        <p className="text-teal-300 text-2xl font-black">
-          how to declareted array in C#
-        </p>
-        <div>
-          <p className="text-white font-semibold">
-            {curDate.curDateDay}
-            {curDate.curMonth}
-            {curDate.curYear}
-            &nbsp;10 min read
-          </p>
-          <p className="text-white text-xl font-semibold">
-            It's very hard bacause they need....
-          </p>
-        </div>
-      </div>
+      {arr.map((element) => {
+        return (
+          <div
+            key={element.id}
+            className="flex justify-start mt-10 flex flex-col"
+          >
+            <Link
+              to={`/menu/${element.id}`}
+              className="text-teal-300 text-2xl font-black"
+            >
+              {element.title}
+            </Link>
+            <div>
+              <p className="text-white font-semibold">
+                {curDate.curDateDay}
+                {curDate.curMonth}
+                {curDate.curYear}
+                &nbsp;10 min read
+              </p>
+              <p className="text-white text-xl font-semibold">
+                It's very hard bacause they need....
+              </p>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
