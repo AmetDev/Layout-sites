@@ -1,5 +1,4 @@
 import { React, useEffect, useState } from "react";
-import { MenuDetail } from "./MenuDetail.jsx";
 import { Link } from "react-router-dom";
 import axios from "axios";
 function Articles() {
@@ -30,19 +29,17 @@ function Articles() {
     curDateDay: clock.getDate(),
   };
   const [arr, setArr] = useState([]);
-  console.log(curDate);
   useEffect(() => {
     async function getPosts() {
       const data2 = await axios.get("http://localhost:4200/posts");
       setArr(data2.data);
-      <MenuDetail info={data2.data} />;
     }
     getPosts();
   }, []);
-  console.log(arr);
   return (
     <div>
       {arr.map((element) => {
+        console.log(element.id);
         return (
           <div
             key={element.id}

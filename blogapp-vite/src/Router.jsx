@@ -8,6 +8,10 @@ const Router = () => {
       <Routes>
         <Route element={<App />} path="/" />
         <Route element={<MenuDetail />} path="/menu/:id" />
+        <Route
+          path="*"
+          element={<div className="text-white">Not found!</div>}
+        />
       </Routes>
     </BrowserRouter>
   );
