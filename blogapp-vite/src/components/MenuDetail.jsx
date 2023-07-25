@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 function MenuDetail() {
   const [arr, setArr] = useState({});
@@ -30,6 +30,9 @@ function MenuDetail() {
             </div>
           );
         })}
+        <button className="bg-white h-10 w-[64px] mb-5 text-center rounded-full flex p-1 items-center  text-2xl font-bold">
+          <Link to="/">back</Link>
+        </button>
       </div>
     </div>
   );
