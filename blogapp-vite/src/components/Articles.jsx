@@ -52,14 +52,12 @@ function Articles() {
               {element.title}
             </Link>
             <div>
-              <p className="text-white font-semibold">
-                {curDate.curDateDay}
-                {curDate.curMonth}
-                {curDate.curYear}
-                &nbsp;10 min read
+              <p className="text-white font-semibold flex ">
+                <p className="mr-2">{element.data}</p>
+                <p>{element.timeforread} read</p>
               </p>
               <p className="text-white text-xl font-semibold">
-                It's very hard bacause they need....
+                {element.introduction.slice(0, 50)}...
               </p>
             </div>
           </div>

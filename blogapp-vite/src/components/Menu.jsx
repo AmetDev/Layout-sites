@@ -12,12 +12,12 @@ function Menu() {
           </a>
         </div>
         <div>
-          <a href="#">
+          <a href="https://t.me/OptimusPrimer94">
             <TgIcon />
           </a>
         </div>
         <div>
-          <a className="" href="#">
+          <a className="" href="https://discord.gg/5f9GfTPT">
             <DsIcon />
           </a>
         </div>
