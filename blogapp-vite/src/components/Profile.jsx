@@ -1,4 +1,5 @@
 function Profile() {
+  console.log("profile")
   return (
     <div className=" flex font-medium  items-center ">
       <div className="bg-teal-300 h-16 w-16 rounded-full"></div>

@@ -1,33 +1,7 @@
-import { React, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 function Articles() {
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const clock = new Date(2023, 7, 20);
-
-  const numMonth = clock.getDate();
-  const currentMonth = months.filter(
-    (month) => months.indexOf(month) + 1 == clock.getMonth()
-  );
-
-  const curDate = {
-    curMonth: currentMonth.join(),
-    curYear: clock.getFullYear(),
-    curDateDay: clock.getDate(),
-  };
   const [arr, setArr] = useState([]);
   useEffect(() => {
     async function getPosts() {
@@ -40,10 +14,11 @@ function Articles() {
     <div>
       {arr.map((element) => {
         console.log(element.id);
+        console.log("articles")
         return (
           <div
             key={element.id}
-            className="flex justify-start mt-10 flex flex-col"
+            className="flex justify-start mt-10  flex-col"
           >
             <Link
               to={`/menu/${element.id}`}
@@ -64,6 +39,8 @@ function Articles() {
         );
       })}
     </div>
-  );
+  )
+
 }
+
 export default Articles;

@@ -3,6 +3,7 @@ import DsIcon from "../assets/ds.jsx";
 import TgIcon from "../assets/tg.jsx";
 
 function Menu() {
+  console.log("Menu")
   return (
     <header className="flex  h-16 justify-between items-center mt-5 mb-5 text-teal-300 font-semibold text-4xl">
       <div className="flex w-[200px] justify-between">
@@ -24,7 +25,7 @@ function Menu() {
       </div>
       <div></div>
       <div>
-        <button>
+        <button onClick={() => { }}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

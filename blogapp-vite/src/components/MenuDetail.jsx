@@ -14,7 +14,7 @@ function MenuDetail() {
     };
     funcAsync();
   }, [id]);
-
+  console.log("MenuDetail")
   return (
     <div>
       <div className="flex jusfify-between flex-col w-max-[1200px] ml-[20%] mr-[20%]">
